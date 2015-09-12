@@ -23,7 +23,7 @@ namespace chocolatey.infrastructure.app.services
     using logging;
     using nuget;
 
-    internal class ChocolateyConfigSettingsService : IChocolateyConfigSettingsService
+    public class ChocolateyConfigSettingsService : IChocolateyConfigSettingsService
     {
         private readonly Lazy<ConfigFileSettings> _configFileSettings;
         private readonly IXmlService _xmlService;

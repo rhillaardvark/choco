@@ -23,7 +23,7 @@ namespace chocolatey.infrastructure.app.services
     using tolerance;
     using IFileSystem = filesystem.IFileSystem;
 
-    internal class ChocolateyPackageInformationService : IChocolateyPackageInformationService
+    public class ChocolateyPackageInformationService : IChocolateyPackageInformationService
     {
         private readonly IFileSystem _fileSystem;
         private readonly IRegistryService _registryService;
